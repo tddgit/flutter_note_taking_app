@@ -22,13 +22,13 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
           email: email,
           password: password,
           isSubmiting: isSubmiting,
-          authFailureOrSuccess: authFailureOrSuccess,
+          authFailureOrSuccessOption: authFailureOrSuccess,
         ));
 
   EmailAddress email;
   Password password;
   bool isSubmiting;
-  Either<AuthFailure, Unit> authFailureOrSuccess;
+  Option<Either<AuthFailure, Unit>> authFailureOrSuccess;
 
   @override
   Stream<SignInFormState> mapEventToState(SignInFormEvent event) async* {
