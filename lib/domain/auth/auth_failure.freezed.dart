@@ -46,7 +46,6 @@ mixin _$AuthFailure {
     required TResult Function() invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? cancelledByUser,
@@ -56,7 +55,6 @@ mixin _$AuthFailure {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(CancelledByUser value) cancelledByUser,
@@ -66,7 +64,6 @@ mixin _$AuthFailure {
         invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(CancelledByUser value)? cancelledByUser,
@@ -91,7 +88,6 @@ class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
   _$AuthFailureCopyWithImpl(this._value, this._then);
 
   final AuthFailure _value;
-
   // ignore: unused_field
   final $Res Function(AuthFailure) _then;
 }

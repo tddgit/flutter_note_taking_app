@@ -4,6 +4,8 @@ analyzer:
     implicit-casts: false
     implicit-dynamic: false
   errors:
+    public_member_api_docs: ignore
+    flutter_style_todos: ignore
     prefer_expression_function_bodies: ignore
     avoid_types_on_closure_parameters: ignore
     diagnostic_describe_all_properties: warning
@@ -50,7 +52,7 @@ analyzer:
     empty_constructor_bodies: warning
     exhaustive_cases: error
     file_names: error
-    flutter_style_todos: warning
+
     implementation_imports: error
     join_return_with_assignment: warning
     library_names: error
@@ -81,7 +83,7 @@ analyzer:
     prefer_if_elements_to_conditional_expressions: warning
     prefer_typing_uninitialized_variables: warning
     provide_deprecation_message: error
-    public_member_api_docs: info
+
     recursive_getters: error
     sized_box_for_whitespace: error
     type_annotate_public_apis: error
